@@ -758,30 +758,28 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbn-vY-beB" userLabel="RIght Label">
                                 <rect key="frame" x="296" y="0.0" width="440" height="414"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ejh-8q-aoi">
-                                        <rect key="frame" x="56" y="45" width="328" height="323"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ejh-8q-aoi">
+                                        <rect key="frame" x="20" y="21" width="400" height="373"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="34" id="DqC-GX-wNR" customClass="HelpScreenTableViewCell" customModule="String_Alignment" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="55.333332061767578" width="328" height="34"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="DqC-GX-wNR" customClass="HelpScreenTableViewCell" customModule="String_Alignment" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="400" height="43.666667938232422"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DqC-GX-wNR" id="MNM-17-21f" customClass="HelpScreenTableViewCell" customModule="String_Alignment" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="328" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DqC-GX-wNR" id="MNM-17-21f" customClass="HelpScreenTableViewCell" customModule="String_Alignment" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lex-T6-BqT">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lex-T6-BqT">
                                                             <rect key="frame" x="296" y="11" width="22" height="22"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1h-Pf-fv8">
-                                                            <rect key="frame" x="9" y="9" width="254" height="28"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="Label" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1h-Pf-fv8">
+                                                            <rect key="frame" x="9" y="9" width="254" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="Dogica_Pixel" family="Dogica Pixel" pointSize="11"/>
                                                             <color key="textColor" name="Text"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zoA-JQ-zNS">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zoA-JQ-zNS">
                                                             <rect key="frame" x="269" y="11" width="21" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -830,11 +828,15 @@
                                 </subviews>
                                 <color key="backgroundColor" name="Right View Background"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ejh-8q-aoi" secondAttribute="bottom" multiplier="414/394" id="6wx-2n-mph"/>
                                     <constraint firstItem="7gV-6f-ISG" firstAttribute="leading" secondItem="vbn-vY-beB" secondAttribute="trailing" multiplier="20/440" id="7tD-vo-Wha"/>
                                     <constraint firstAttribute="bottom" secondItem="KzI-oe-N6e" secondAttribute="bottom" multiplier="414/394" id="Tsk-VM-AgT"/>
                                     <constraint firstItem="7gV-6f-ISG" firstAttribute="height" secondItem="KzI-oe-N6e" secondAttribute="height" id="UYM-W9-FgN"/>
+                                    <constraint firstAttribute="trailing" secondItem="ejh-8q-aoi" secondAttribute="trailing" multiplier="440/420" id="bwt-i7-8lf"/>
                                     <constraint firstAttribute="bottom" secondItem="7gV-6f-ISG" secondAttribute="bottom" multiplier="414/394" id="dix-jB-Prm"/>
                                     <constraint firstAttribute="trailing" secondItem="KzI-oe-N6e" secondAttribute="trailing" multiplier="440/420" id="fuq-bS-Y4H"/>
+                                    <constraint firstItem="ejh-8q-aoi" firstAttribute="leading" secondItem="vbn-vY-beB" secondAttribute="trailing" multiplier="20/440" id="xyY-8y-ipn"/>
+                                    <constraint firstItem="ejh-8q-aoi" firstAttribute="top" secondItem="vbn-vY-beB" secondAttribute="baseline" multiplier="20/394" id="ySu-JV-1DO"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jid-tj-SUa" userLabel="Left View" customClass="LeftUIView" customModule="String_Alignment" customModuleProvider="target">

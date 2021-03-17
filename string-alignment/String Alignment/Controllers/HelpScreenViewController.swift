@@ -15,7 +15,7 @@ class HelpScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     var realColumnCount = 3
     var wordOneList = [String]()
     var wordTwoList = [String]()
-    var listData = WordDataLoader() // New
+    var listData = HelpDataLoader() // New
     
     let defaults = UserDefaults.standard
     var selectedWordOne = UserDefaults.standard.integer(forKey: "Selected Path Finding Algorithim")
@@ -24,17 +24,18 @@ class HelpScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewWillAppear(_ animated: Bool) {
         determinCorrectWordSize()
-        listData.loadData(filename: "WordData")
-        wordOneList = listData.getEntires(index: realColumnCount)
-        wordTwoList = listData.getEntires(index: realRowCount)
+        listData.loadData(filename: "HelpData")
+        wordOneList = listData.getEntires(index: 6)
+        wordTwoList = listData.getEntires(index: 6)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         determinCorrectWordSize()
-        listData.loadData(filename: "WordData")
-        wordOneList = listData.getEntires(index: realColumnCount)
-        wordTwoList = listData.getEntires(index: realRowCount)
+        listData.loadData(filename: "HelpData")
+        wordOneList = listData.getEntires(index: 6)
+        wordTwoList = listData.getEntires(index: 6)
         
         determinCorrectWordSize()
         loadUserData()
@@ -65,6 +66,14 @@ class HelpScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.label.text = tableViewDisplayList[indexPath.row]
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
     
     func urlSelector(webURL: String, appURL: String) {
