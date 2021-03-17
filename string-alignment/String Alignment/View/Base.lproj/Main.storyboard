@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9gE-ur-Y08">
     <device id="retina5_5" orientation="landscape" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -758,6 +758,49 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbn-vY-beB" userLabel="RIght Label">
                                 <rect key="frame" x="296" y="0.0" width="440" height="414"/>
                                 <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ejh-8q-aoi">
+                                        <rect key="frame" x="56" y="45" width="328" height="323"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="34" id="DqC-GX-wNR" customClass="HelpScreenTableViewCell" customModule="String_Alignment" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="55.333332061767578" width="328" height="34"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DqC-GX-wNR" id="MNM-17-21f" customClass="HelpScreenTableViewCell" customModule="String_Alignment" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="328" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lex-T6-BqT">
+                                                            <rect key="frame" x="296" y="11" width="22" height="22"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1h-Pf-fv8">
+                                                            <rect key="frame" x="9" y="9" width="254" height="28"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Dogica_Pixel" family="Dogica Pixel" pointSize="11"/>
+                                                            <color key="textColor" name="Text"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zoA-JQ-zNS">
+                                                            <rect key="frame" x="269" y="11" width="21" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="Left View Background"/>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" name="Left View Background"/>
+                                                <connections>
+                                                    <outlet property="guaranteedIconSquare" destination="Lex-T6-BqT" id="fsI-HL-u4U"/>
+                                                    <outlet property="label" destination="R1h-Pf-fv8" id="LMa-EB-pSJ"/>
+                                                    <outlet property="optimalIconSquare" destination="zoA-JQ-zNS" id="iae-Vd-nbZ"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="9gE-ur-Y08" id="cYO-eF-1QH"/>
+                                            <outlet property="delegate" destination="9gE-ur-Y08" id="WyR-M0-mGZ"/>
+                                        </connections>
+                                    </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gV-6f-ISG" userLabel="Return To Settings" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                         <rect key="frame" x="20" y="349" width="45" height="45"/>
                                         <color key="backgroundColor" name="UI Button"/>
@@ -933,6 +976,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rwE-td-HZQ"/>
+                    <connections>
+                        <outlet property="tableVIew" destination="ejh-8q-aoi" id="HiQ-or-cTF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dR2-3Z-khx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -940,7 +986,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HB8-7U-962"/>
+        <segue reference="f62-Ey-MOA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Chevron_Down_Icon_Set" width="336" height="384"/>

@@ -36,6 +36,7 @@
 		618D816D25E716F600949517 /* f_Fb.wav in Resources */ = {isa = PBXBuildFile; fileRef = 618D816825E716F600949517 /* f_Fb.wav */; };
 		618D817025E7198700949517 /* b_B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 618D816F25E7198700949517 /* b_B.wav */; };
 		618D817325E7199400949517 /* a_A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 618D817225E7199400949517 /* a_A.wav */; };
+		85F2BC2E2601930600E30F99 /* HelpScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F2BC2D2601930600E30F99 /* HelpScreenTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		618D816825E716F600949517 /* f_Fb.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = f_Fb.wav; sourceTree = "<group>"; };
 		618D816F25E7198700949517 /* b_B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = b_B.wav; sourceTree = "<group>"; };
 		618D817225E7199400949517 /* a_A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = a_A.wav; sourceTree = "<group>"; };
+		85F2BC2D2601930600E30F99 /* HelpScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				387FD13A241DC51C0004FD78 /* MainScreenTableViewCell.swift */,
+				85F2BC2D2601930600E30F99 /* HelpScreenTableViewCell.swift */,
 				3868F9812426B5EC008F7B34 /* SettingsScreenTableViewCell.swift */,
 			);
 			path = "Table View Cells";
@@ -278,6 +281,7 @@
 				3868F97C2426960C008F7B34 /* HelpScreenViewController.swift in Sources */,
 				610284B125E1A83A0064E9EF /* StringAlignment.swift in Sources */,
 				617B9D7A25E5C9DC00EAFA3D /* WordDataLoader.swift in Sources */,
+				85F2BC2E2601930600E30F99 /* HelpScreenTableViewCell.swift in Sources */,
 				3868F9822426B5EC008F7B34 /* SettingsScreenTableViewCell.swift in Sources */,
 				3868F97E24269985008F7B34 /* GameScreenViewController.swift in Sources */,
 				3803D89B2497F7D7002A6251 /* Custom UI Managers.swift in Sources */,

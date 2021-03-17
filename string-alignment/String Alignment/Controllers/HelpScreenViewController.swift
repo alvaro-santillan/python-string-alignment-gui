@@ -8,15 +8,63 @@
 
 import UIKit
 
-class HelpScreenViewController: UIViewController {
+class HelpScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var tableVIew: UITableView!
+    
+    var realRowCount = 3
+    var realColumnCount = 3
+    var wordOneList = [String]()
+    var wordTwoList = [String]()
+    var listData = WordDataLoader() // New
+    
+    let defaults = UserDefaults.standard
+    var selectedWordOne = UserDefaults.standard.integer(forKey: "Selected Path Finding Algorithim")
+    var selectedWordTwo = UserDefaults.standard.integer(forKey: "Selected Maze Algorithim")
+    lazy var tableViewDisplayList = wordOneList
+    
+    override func viewWillAppear(_ animated: Bool) {
+        determinCorrectWordSize()
+        listData.loadData(filename: "WordData")
+        wordOneList = listData.getEntires(index: realColumnCount)
+        wordTwoList = listData.getEntires(index: realRowCount)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        determinCorrectWordSize()
+        listData.loadData(filename: "WordData")
+        wordOneList = listData.getEntires(index: realColumnCount)
+        wordTwoList = listData.getEntires(index: realRowCount)
+        
+        determinCorrectWordSize()
         loadUserData()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        loadUserData()
+    }
+    
+    func determinCorrectWordSize() {
+        let squareWidth = 46
+        let frame = UIScreen.main.bounds.size
+        // -5 == -4 Due to buffer squares and -1 becouse word plist starts at 0.
+        realRowCount = (Int(((frame.height)/CGFloat(squareWidth)).rounded(.up)) - 5)
+        realColumnCount = (Int(((frame.width)/CGFloat(squareWidth)).rounded(.up)) - 5)
+        print(realRowCount, realColumnCount)
+        
+    }
+    
     func loadUserData() {
-        UserDefaults.standard.bool(forKey: "Dark Mode On Setting") ? (overrideUserInterfaceStyle = .dark) : (overrideUserInterfaceStyle = .light)
+        defaults.bool(forKey: "Dark Mode On Setting") ? (overrideUserInterfaceStyle = .dark) : (overrideUserInterfaceStyle = .light)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {return tableViewDisplayList.count}
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HelpScreenTableViewCell
+        cell.label.text = tableViewDisplayList[indexPath.row]
+
+        return cell
     }
     
     func urlSelector(webURL: String, appURL: String) {
