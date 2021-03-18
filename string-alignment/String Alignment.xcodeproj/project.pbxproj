@@ -37,6 +37,9 @@
 		618D817025E7198700949517 /* b_B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 618D816F25E7198700949517 /* b_B.wav */; };
 		618D817325E7199400949517 /* a_A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 618D817225E7199400949517 /* a_A.wav */; };
 		85F2BC2E2601930600E30F99 /* HelpScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F2BC2D2601930600E30F99 /* HelpScreenTableViewCell.swift */; };
+		85F2BC3126019A3800E30F99 /* HelpData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85F2BC3026019A3800E30F99 /* HelpData.plist */; };
+		85F2BC3426019DE600E30F99 /* HelpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F2BC3326019DE600E30F99 /* HelpData.swift */; };
+		85F2BC3726019DF800E30F99 /* HelpDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F2BC3626019DF800E30F99 /* HelpDataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +75,9 @@
 		618D816F25E7198700949517 /* b_B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = b_B.wav; sourceTree = "<group>"; };
 		618D817225E7199400949517 /* a_A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = a_A.wav; sourceTree = "<group>"; };
 		85F2BC2D2601930600E30F99 /* HelpScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenTableViewCell.swift; sourceTree = "<group>"; };
+		85F2BC3026019A3800E30F99 /* HelpData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HelpData.plist; sourceTree = "<group>"; };
+		85F2BC3326019DE600E30F99 /* HelpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpData.swift; sourceTree = "<group>"; };
+		85F2BC3626019DF800E30F99 /* HelpDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpDataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 				618D816325E716E500949517 /* Sounds */,
 				3812395223C68E2C0066B3FA /* Info.plist */,
 				617B9D7125E59A4600EAFA3D /* WordData.plist */,
+				85F2BC3026019A3800E30F99 /* HelpData.plist */,
 				3812394223C68E290066B3FA /* GameScene.sks */,
 				3812394023C68E290066B3FA /* AppDelegate.swift */,
 			);
@@ -132,7 +139,9 @@
 			children = (
 				3803D89A2497F7D7002A6251 /* Custom UI Managers.swift */,
 				617B9D7625E5C96A00EAFA3D /* WordData.swift */,
+				85F2BC3326019DE600E30F99 /* HelpData.swift */,
 				617B9D7925E5C9DC00EAFA3D /* WordDataLoader.swift */,
+				85F2BC3626019DF800E30F99 /* HelpDataLoader.swift */,
 				3803D89C2497F87A002A6251 /* Custom Extensions.swift */,
 				382F0F1624AD527B0022E521 /* Custom Data Structures.swift */,
 				610284AE25E1A7CE0064E9EF /* Dynamic Programming Algorithms */,
@@ -267,6 +276,7 @@
 				618D816D25E716F600949517 /* f_Fb.wav in Resources */,
 				3812395123C68E2C0066B3FA /* LaunchScreen.storyboard in Resources */,
 				618D816B25E716F600949517 /* bb_Ab.wav in Resources */,
+				85F2BC3126019A3800E30F99 /* HelpData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +292,9 @@
 				610284B125E1A83A0064E9EF /* StringAlignment.swift in Sources */,
 				617B9D7A25E5C9DC00EAFA3D /* WordDataLoader.swift in Sources */,
 				85F2BC2E2601930600E30F99 /* HelpScreenTableViewCell.swift in Sources */,
+				85F2BC3726019DF800E30F99 /* HelpDataLoader.swift in Sources */,
 				3868F9822426B5EC008F7B34 /* SettingsScreenTableViewCell.swift in Sources */,
+				85F2BC3426019DE600E30F99 /* HelpData.swift in Sources */,
 				3868F97E24269985008F7B34 /* GameScreenViewController.swift in Sources */,
 				3803D89B2497F7D7002A6251 /* Custom UI Managers.swift in Sources */,
 				3812394723C68E290066B3FA /* GameScene.swift in Sources */,
