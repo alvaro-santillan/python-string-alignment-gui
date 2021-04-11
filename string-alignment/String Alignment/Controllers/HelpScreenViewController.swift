@@ -18,41 +18,27 @@ class HelpScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     var listData = HelpDataLoader() // New
     
     let defaults = UserDefaults.standard
-    var selectedWordOne = UserDefaults.standard.integer(forKey: "Selected Path Finding Algorithim")
-    var selectedWordTwo = UserDefaults.standard.integer(forKey: "Selected Maze Algorithim")
+//    var selectedWordOne = UserDefaults.standard.integer(forKey: "Selected Path Finding Algorithim")
+//    var selectedWordTwo = UserDefaults.standard.integer(forKey: "Selected Maze Algorithim")
     lazy var tableViewDisplayList = wordOneList
     
     override func viewWillAppear(_ animated: Bool) {
-        determinCorrectWordSize()
         listData.loadData(filename: "HelpData")
-        wordOneList = listData.getEntires(index: 6)
-        wordTwoList = listData.getEntires(index: 6)
+        wordOneList = listData.getEntires(index: 7)
+        wordTwoList = listData.getEntires(index: 7)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        determinCorrectWordSize()
         listData.loadData(filename: "HelpData")
-        wordOneList = listData.getEntires(index: 6)
-        wordTwoList = listData.getEntires(index: 6)
-        
-        determinCorrectWordSize()
+        wordOneList = listData.getEntires(index: 7)
+        wordTwoList = listData.getEntires(index: 7)
         loadUserData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         loadUserData()
-    }
-    
-    func determinCorrectWordSize() {
-        let squareWidth = 46
-        let frame = UIScreen.main.bounds.size
-        // -5 == -4 Due to buffer squares and -1 becouse word plist starts at 0.
-        realRowCount = (Int(((frame.height)/CGFloat(squareWidth)).rounded(.up)) - 5)
-        realColumnCount = (Int(((frame.width)/CGFloat(squareWidth)).rounded(.up)) - 5)
-        print(realRowCount, realColumnCount)
-        
     }
     
     func loadUserData() {
@@ -64,16 +50,17 @@ class HelpScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HelpScreenTableViewCell
         cell.label.text = tableViewDisplayList[indexPath.row]
+//        cell.label.numberOfLines = 0
 
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 50
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 50
     }
     
     func urlSelector(webURL: String, appURL: String) {
