@@ -16,7 +16,7 @@ class SettingsSceenViewController: UIViewController, UITableViewDelegate, UITabl
     
     // Text Buttons
     @IBOutlet weak var speedButton: UIButton!
-    @IBOutlet weak var substituteButton: UIButton!
+    @IBOutlet weak var substituteCostButton: UIButton!
     @IBOutlet weak var deleteCostButton: UIButton!
     @IBOutlet weak var animationsButton: UIButton!
     @IBOutlet weak var insertCostButton: UIButton!
@@ -38,7 +38,6 @@ class SettingsSceenViewController: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLoad()
         loadUserData()
         loadButtonStyling()
-        print(legendData)
     }
     
     func loadUserData() {
@@ -49,7 +48,7 @@ class SettingsSceenViewController: UIViewController, UITableViewDelegate, UITabl
         var options = ["Speed: Slow", "Speed: Normal", "Speed: Fast", "Speed: Extreme"]
         fourOptionButtonLoader(targetButton: speedButton, key: "Snake Speed Text Setting", optionArray: options)
         options = ["Substitute Cost: 1", "Substitute Cost: 2", "Substitute Cost: 3", "Substitute Cost: 4"]
-        fourOptionButtonLoader(targetButton: substituteButton, key: "Substitute Cost Setting", optionArray: options)
+        fourOptionButtonLoader(targetButton: substituteCostButton, key: "Substitute Cost Setting", optionArray: options)
         options = ["Delete Cost: 1", "Delete Cost: 2", "Delete Cost: 3", "Delete Cost: 4"]
         fourOptionButtonLoader(targetButton: deleteCostButton, key: "Delete Cost Setting", optionArray: options)
         options = ["Insert Cost: 1", "Insert Cost: 2", "Insert Cost: 3", "Insert Cost: 4"]
@@ -61,6 +60,18 @@ class SettingsSceenViewController: UIViewController, UITableViewDelegate, UITabl
         boolButtonLoader(isIconButton: true, targetButton: soundButton, key: "Volume On Setting", trueOption: "Volume_On_Icon_Set", falseOption: "Volume_Mute_Icon_Set")
         boolButtonLoader(isIconButton: true, targetButton: vibrationButton, key: "Vibrate On Setting", trueOption: "Vibrate_On_Icon_Set", falseOption: "Vibrate_Off_Icon_Set")
         boolButtonLoader(isIconButton: true, targetButton: darkOrLightModeButton, key: "Dark Mode On Setting", trueOption: "Dark_Mode_Icon_Set", falseOption: "Light_Mode_Icon_Set")
+        loadAlgorthimButtonStying()
+    }
+    
+    func loadAlgorthimButtonStying() {
+        let substituteColor = colorPaletteManager(cellText: "Substitute")[(legendData[3][1] as? Int)!]
+        substituteCostButton.layer.backgroundColor = substituteColor.cgColor
+        let deleteColor = colorPaletteManager(cellText: "Delete")[(legendData[2][1] as? Int)!]
+        deleteCostButton.layer.backgroundColor = deleteColor.cgColor
+        let insertColor = colorPaletteManager(cellText: "Insert")[(legendData[1][1] as? Int)!]
+        insertCostButton.layer.backgroundColor = insertColor.cgColor
+        let noOperationColor = colorPaletteManager(cellText: "No Opperation")[(legendData[4][1] as? Int)!]
+        noOperationCostButton.layer.backgroundColor = noOperationColor.cgColor
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -94,6 +105,7 @@ class SettingsSceenViewController: UIViewController, UITableViewDelegate, UITabl
         defaults.setColor(color: colorPalette[(legendData[tappedSquare.tag][1] as! Int)], forKey: legendData[tappedSquare.tag][0] as! String)
         legendData[tappedSquare.tag][1] = colorID
         defaults.set(legendData, forKey: "Legend Preferences")
+        loadAlgorthimButtonStying()
         tableVIew.reloadData()
         changeNotifier()
     }
