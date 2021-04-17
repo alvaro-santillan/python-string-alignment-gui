@@ -34,7 +34,7 @@
                                         <subviews>
                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="String Alignment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OaO-jX-FWi">
                                                 <rect key="frame" x="0.0" y="0.0" width="328" height="40"/>
-                                                <color key="backgroundColor" name="Right View Background"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                     <bool key="isElement" value="NO"/>
@@ -42,7 +42,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="1zs-MT-Khs"/>
                                                 </constraints>
-                                                <color key="textColor" name="Text"/>
+                                                <color key="textColor" name="Right Title Text"/>
                                                 <fontDescription key="fontDescription" name="Dogica_Pixel_Bold" family="Dogica Pixel" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -54,7 +54,7 @@
                                                 <subviews>
                                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Word 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCi-3a-UgI">
                                                         <rect key="frame" x="0.0" y="0.0" width="154" height="34"/>
-                                                        <color key="backgroundColor" name="Right View Background"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                             <bool key="isElement" value="NO"/>
@@ -63,7 +63,7 @@
                                                             <constraint firstAttribute="width" constant="154" id="Bdl-yh-LDp"/>
                                                             <constraint firstAttribute="height" constant="34" id="vgt-f3-zlL"/>
                                                         </constraints>
-                                                        <color key="textColor" name="Text"/>
+                                                        <color key="textColor" name="Right Title Text"/>
                                                         <fontDescription key="fontDescription" name="Dogica_Pixel" family="Dogica Pixel" pointSize="11"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -72,12 +72,12 @@
                                                     </view>
                                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Word 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gJU-qy-YPl">
                                                         <rect key="frame" x="174" y="0.0" width="154" height="34"/>
-                                                        <color key="backgroundColor" name="Right View Background"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                             <bool key="isElement" value="NO"/>
                                                         </accessibility>
-                                                        <color key="textColor" name="Text"/>
+                                                        <color key="textColor" name="Right Title Text"/>
                                                         <fontDescription key="fontDescription" name="Dogica_Pixel" family="Dogica Pixel" pointSize="11"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -118,7 +118,7 @@
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGo-DO-Zbt" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                                 <rect key="frame" x="80" y="0.0" width="248" height="60"/>
-                                                <color key="backgroundColor" name="Github Button"/>
+                                                <color key="backgroundColor" name="Icon Button"/>
                                                 <fontDescription key="fontDescription" name="Dogica_Pixel_Bold" family="Dogica Pixel" pointSize="27"/>
                                                 <state key="normal" title="START">
                                                     <color key="titleColor" name="Text"/>
@@ -909,13 +909,13 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="v0P-FU-9Y9">
-                                                <rect key="frame" x="38" y="150" width="200" height="198"/>
+                                                <rect key="frame" x="38" y="150" width="200" height="202.33333333333337"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73F-cG-W98">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="10"/>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbF-dl-b7y" customClass="TextUIButton" customModule="String_Alignment" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="10" width="200" height="32"/>
+                                                        <rect key="frame" x="0.0" y="10" width="200" height="36"/>
                                                         <color key="backgroundColor" name="Rate Button"/>
                                                         <fontDescription key="fontDescription" name="Dogica_Pixel" family="Dogica Pixel" pointSize="20"/>
                                                         <state key="normal" title="Rate">
@@ -926,13 +926,13 @@
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7n-vV-tEK">
-                                                        <rect key="frame" x="0.0" y="42" width="50" height="156"/>
+                                                        <rect key="frame" x="0.0" y="46" width="50" height="156.33333333333334"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="4" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xIX-3Z-EMF">
-                                                <rect key="frame" x="0.0" y="348" width="276" height="36"/>
+                                                <rect key="frame" x="0.66666666666665719" y="352.33333333333331" width="274.66666666666674" height="31.666666666666686"/>
                                                 <string key="text">Made from scratch with Love, Swift 5, Xcode, and a Stack Overflow post or 2. Copyright © 2019-2021 Álvaro Santillan. All rights reserved.</string>
                                                 <fontDescription key="fontDescription" name="Dogica_Pixel" family="Dogica Pixel" pointSize="9"/>
                                                 <color key="textColor" name="Text"/>
