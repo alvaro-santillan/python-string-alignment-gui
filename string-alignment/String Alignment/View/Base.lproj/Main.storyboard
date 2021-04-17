@@ -758,7 +758,7 @@
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="5" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ejh-8q-aoi">
                                         <rect key="frame" x="20" y="21" width="400" height="373"/>
-                                        <color key="backgroundColor" name="Right View Background"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexColor" red="0.22352941179999999" green="0.47843137250000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="198" id="DqC-GX-wNR" customClass="HelpScreenTableViewCell" customModule="String_Alignment" customModuleProvider="target">
@@ -770,14 +770,14 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1h-Pf-fv8">
                                                             <rect key="frame" x="0.0" y="0.0" width="400" height="198"/>
-                                                            <color key="backgroundColor" name="Right View Background"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <string key="text">LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel</string>
                                                             <fontDescription key="fontDescription" name="Dogica_Pixel" family="Dogica Pixel" pointSize="11"/>
                                                             <color key="textColor" name="Text"/>
                                                             <color key="highlightedColor" name="Right View Background"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" name="Left View Background"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="R1h-Pf-fv8" firstAttribute="leading" secondItem="MNM-17-21f" secondAttribute="leading" id="5NT-6g-KBK"/>
                                                         <constraint firstAttribute="trailing" secondItem="R1h-Pf-fv8" secondAttribute="trailing" id="7bI-8B-qTp"/>
@@ -785,7 +785,7 @@
                                                         <constraint firstItem="R1h-Pf-fv8" firstAttribute="top" secondItem="MNM-17-21f" secondAttribute="top" id="o0Q-D7-LUf"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
-                                                <color key="backgroundColor" name="Right View Background"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
                                                     <outlet property="label" destination="R1h-Pf-fv8" id="LMa-EB-pSJ"/>
                                                 </connections>
@@ -903,6 +903,10 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="5bU-CR-ltO" firstAttribute="width" secondItem="dOa-dg-iZM" secondAttribute="width" id="3eB-63-gsl"/>
+                                                    <constraint firstItem="5bU-CR-ltO" firstAttribute="width" secondItem="bjA-tu-N8I" secondAttribute="width" id="rss-ZE-a70"/>
+                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="v0P-FU-9Y9">
                                                 <rect key="frame" x="38" y="150" width="200" height="198"/>
@@ -926,9 +930,6 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="pbF-dl-b7y" firstAttribute="centerX" secondItem="v0P-FU-9Y9" secondAttribute="centerX" id="KWO-0Y-yEz"/>
-                                                </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="4" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xIX-3Z-EMF">
                                                 <rect key="frame" x="0.0" y="348" width="276" height="36"/>
@@ -938,6 +939,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pbF-dl-b7y" firstAttribute="width" secondItem="Kws-t9-gxm" secondAttribute="width" id="sQh-bk-rRs"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="Left View Background"/>
