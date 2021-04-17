@@ -30,7 +30,6 @@ class HelpScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         listData.loadData(filename: "HelpData")
         wordOneList = listData.getEntires(index: 7)
         wordTwoList = listData.getEntires(index: 7)
