@@ -88,5 +88,14 @@
 			<string>This function takes the array from extractAlignment as an argument. We know that startString + endString is part of the worst case. We use the length of that array as a condition for a while loop. therefore the worst case is len(startString + endString).</string>
 		</array>
 	</dict>
+	<dict>
+		<key>sectionName</key>
+		<string>Runtime Complexity Justifications</string>
+		<key>entries</key>
+		<array>
+			<string>This is because there are two strings that the algorithm is using to create a two-dimensional matrix. Every value in that two-dimensional matrix needs to be computed therefore its running time is thata (startString * endString)</string>
+			<string>This function takes the array from extractAlignment as an argument. We know that startString + endString is part of the worst case. We use the length of that array as a condition for a while loop. therefore the worst case is len(startString + endString).</string>
+		</array>
+	</dict>
 </array>
 </plist>

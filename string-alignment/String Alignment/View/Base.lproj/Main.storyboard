@@ -100,7 +100,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5o-q0-oD3" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                                                <color key="backgroundColor" name="UI Button"/>
+                                                <color key="backgroundColor" name="Icon Button"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="3hS-M8-6uE"/>
                                                     <constraint firstAttribute="width" secondItem="l5o-q0-oD3" secondAttribute="height" multiplier="1:1" id="YLJ-VL-3VP"/>
@@ -118,7 +118,7 @@
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGo-DO-Zbt" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                                 <rect key="frame" x="80" y="0.0" width="248" height="60"/>
-                                                <color key="backgroundColor" name="UI Button"/>
+                                                <color key="backgroundColor" name="Github Button"/>
                                                 <fontDescription key="fontDescription" name="Dogica_Pixel_Bold" family="Dogica Pixel" pointSize="27"/>
                                                 <state key="normal" title="START">
                                                     <color key="titleColor" name="Text"/>
@@ -268,7 +268,7 @@
                                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <color key="textColor" name="Title Text"/>
+                                                <color key="textColor" name="Left Title Text"/>
                                                 <fontDescription key="fontDescription" name="Dogica_Pixel_Bold" family="Dogica Pixel" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -415,7 +415,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uq-B1-7Ui" userLabel="Sound" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
-                                                <color key="backgroundColor" name="UI Button"/>
+                                                <color key="backgroundColor" name="Icon Button"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8uq-B1-7Ui" secondAttribute="height" multiplier="1:1" id="3jc-3G-LfR"/>
                                                 </constraints>
@@ -431,7 +431,7 @@
                                             </view>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upX-fy-FEE" userLabel="Help" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                                 <rect key="frame" x="135" y="0.0" width="45" height="45"/>
-                                                <color key="backgroundColor" name="UI Button"/>
+                                                <color key="backgroundColor" name="Icon Button"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="upX-fy-FEE" secondAttribute="height" multiplier="1:1" id="S5N-eM-vQF"/>
                                                 </constraints>
@@ -447,7 +447,7 @@
                                             </view>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF9-Fn-yKR" userLabel="Sound" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                                 <rect key="frame" x="190" y="0.0" width="45" height="45"/>
-                                                <color key="backgroundColor" name="UI Button"/>
+                                                <color key="backgroundColor" name="Icon Button"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="rF9-Fn-yKR" secondAttribute="height" multiplier="1:1" id="zxr-tI-JVG"/>
                                                 </constraints>
@@ -463,7 +463,7 @@
                                             </view>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfL-tN-qLN" userLabel="Step / Auto Play " customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                                 <rect key="frame" x="245" y="0.0" width="45" height="45"/>
-                                                <color key="backgroundColor" name="UI Button"/>
+                                                <color key="backgroundColor" name="Icon Button"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="GfL-tN-qLN" secondAttribute="height" multiplier="1:1" id="S0r-JL-9Nv"/>
                                                 </constraints>
@@ -479,7 +479,7 @@
                                             </view>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXh-5F-g45" userLabel="Dark/ Light Mode" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                                 <rect key="frame" x="300" y="0.0" width="45" height="45"/>
-                                                <color key="backgroundColor" name="UI Button"/>
+                                                <color key="backgroundColor" name="Icon Button"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="NXh-5F-g45" secondAttribute="height" multiplier="1:1" id="lRP-32-1jU"/>
                                                 </constraints>
@@ -495,7 +495,7 @@
                                             </view>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4T-iy-Fyn" userLabel="Home" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                                 <rect key="frame" x="355" y="0.0" width="45" height="45"/>
-                                                <color key="backgroundColor" name="UI Button"/>
+                                                <color key="backgroundColor" name="Icon Button"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="e4T-iy-Fyn" secondAttribute="height" multiplier="1:1" id="Lko-sT-SGH"/>
                                                 </constraints>
@@ -547,7 +547,7 @@
                                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
-                                                <color key="textColor" name="Title Text"/>
+                                                <color key="textColor" name="Right Title Text"/>
                                                 <fontDescription key="fontDescription" name="Dogica_Pixel_Bold" family="Dogica Pixel" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -798,7 +798,7 @@
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gV-6f-ISG" userLabel="Return To Settings" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                         <rect key="frame" x="20" y="349" width="45" height="45"/>
-                                        <color key="backgroundColor" name="UI Button"/>
+                                        <color key="backgroundColor" name="Icon Button"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="7gV-6f-ISG" secondAttribute="height" multiplier="1:1" id="6oe-v7-7qr"/>
                                         </constraints>
@@ -811,7 +811,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzI-oe-N6e" userLabel="Home" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                         <rect key="frame" x="375" y="349" width="45" height="45"/>
-                                        <color key="backgroundColor" name="UI Button"/>
+                                        <color key="backgroundColor" name="Icon Button"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="KzI-oe-N6e" secondAttribute="height" multiplier="1:1" id="naT-t6-Khp"/>
                                         </constraints>
@@ -865,7 +865,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bU-CR-ltO" userLabel="Linked-In" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                                                        <color key="backgroundColor" name="Social UI Button"/>
+                                                        <color key="backgroundColor" name="Linked-In Button"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="5bU-CR-ltO" secondAttribute="height" multiplier="1:1" id="85g-KK-Lln"/>
                                                         </constraints>
@@ -879,7 +879,7 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOa-dg-iZM" userLabel="Github" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                                         <rect key="frame" x="70" y="0.0" width="60" height="60"/>
-                                                        <color key="backgroundColor" name="Social UI Button"/>
+                                                        <color key="backgroundColor" name="Website Button"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="dOa-dg-iZM" secondAttribute="height" multiplier="1:1" id="pKC-hV-YG5"/>
                                                         </constraints>
@@ -893,7 +893,7 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjA-tu-N8I" userLabel="Github" customClass="IconUIButton" customModule="String_Alignment" customModuleProvider="target">
                                                         <rect key="frame" x="140" y="0.0" width="60" height="60"/>
-                                                        <color key="backgroundColor" name="Social UI Button"/>
+                                                        <color key="backgroundColor" name="Github Button"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="bjA-tu-N8I" secondAttribute="height" multiplier="1:1" id="eiA-Fr-O5C"/>
                                                         </constraints>
@@ -912,7 +912,7 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbF-dl-b7y" customClass="TextUIButton" customModule="String_Alignment" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="10" width="200" height="36"/>
-                                                        <color key="backgroundColor" name="Social UI Button"/>
+                                                        <color key="backgroundColor" name="Rate Button"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <state key="normal" title="Rate">
                                                             <color key="titleColor" name="Text"/>
@@ -999,23 +999,38 @@
         <image name="Play_Icon_Set" width="336" height="384"/>
         <image name="Settings_Icon_Set" width="384" height="384"/>
         <image name="Volume_On_Icon_Set" width="288" height="384"/>
+        <namedColor name="Github Button">
+            <color red="0.4309999942779541" green="0.32899999618530273" blue="0.57999998331069946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Icon Button">
+            <color red="0.5220000147819519" green="0.79600000381469727" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Left Title Text">
+            <color red="0.0" green="0.27099999785423279" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Left View Background">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Linked-In Button">
+            <color red="0.0" green="0.46700000762939453" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Rate Button">
+            <color red="0.30899998545646667" green="0.64999997615814209" blue="0.60100001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Right Title Text">
+            <color red="0.0" green="0.27099999785423279" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Right View Background">
-            <color red="0.0" green="0.58823529411764708" blue="0.6470588235294118" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Social UI Button">
-            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.58799999952316284" blue="0.6470000147819519" alpha="0.15000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Title Text">
-            <color red="0.0" green="0.58823529411764708" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="UI Button">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Website Button">
+            <color red="0.96100002527236938" green="0.94900000095367432" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
