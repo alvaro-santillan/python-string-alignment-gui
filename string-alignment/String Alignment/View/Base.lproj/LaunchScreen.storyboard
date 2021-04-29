@@ -23,21 +23,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2019-2021 Álvaro F Santillan. All rights reserved." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="none" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="l4n-0Q-zcV">
-                                <rect key="frame" x="73.666666666666686" y="385" width="588.66666666666652" height="14"/>
+                                <rect key="frame" x="73.666666666666686" y="387" width="588.66666666666652" height="12"/>
                                 <fontDescription key="fontDescription" name="Dogica_Pixel" family="Dogica Pixel" pointSize="12"/>
                                 <color key="textColor" name="Text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="String Alignment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NT7-2O-k5A">
-                                <rect key="frame" x="110.33333333333331" y="174.66666666666666" width="515.33333333333348" height="64.666666666666657"/>
-                                <color key="backgroundColor" name="Left View Background"/>
+                                <rect key="frame" x="110.33333333333331" y="180" width="515.33333333333348" height="54"/>
                                 <color key="textColor" name="Text"/>
                                 <fontDescription key="fontDescription" name="Dogica_Pixel" family="Dogica Pixel" pointSize="54"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="Left View Background"/>
+                        <color key="backgroundColor" name="Right View Background"/>
                         <constraints>
                             <constraint firstItem="l4n-0Q-zcV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DR7-Se-tOj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l4n-0Q-zcV" secondAttribute="bottom" constant="15" id="PDZ-31-pCR"/>
@@ -54,8 +53,8 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="Left View Background">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Right View Background">
+            <color red="0.85900002717971802" green="0.93699997663497925" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
