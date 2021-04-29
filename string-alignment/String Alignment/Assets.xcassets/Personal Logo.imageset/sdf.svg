@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;fill:#FFFFFF;}
+	.st1{fill:#052230;}
+	.st2{fill:none;stroke:#DDD1C7;stroke-width:23;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#052230;stroke-width:23;stroke-miterlimit:10;}
+	.st4{display:none;fill:#FFFFFF;stroke:#FFFFFF;stroke-width:23;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M401,610.5c-124.5,0-225.5-101-225.5-225.6s101-225.5,225.6-225.5c124.5,0,225.5,101,225.5,225.6
+	c0,59.8-23.8,117.2-66.1,159.5C518.2,586.9,460.8,610.7,401,610.5z"/>
+<path class="st1" d="M401,171c117.8,0.2,213.1,95.8,213,213.6s-95.8,213.1-213.6,213s-213.1-95.8-213-213.6
+	c0.1-85.6,51.4-162.9,130.3-196.2C344.1,176.7,372.4,170.9,401,171 M401,148c-130.9,0-237,106.1-237,237s106.1,237,237,237
+	s237-106.1,237-237S531.9,148,401,148z"/>
+<polyline class="st2" points="331.5,386.5 292.5,432.5 583.5,270.5 "/>
+<polyline class="st3" points="192.5,453.5 305.5,343.5 331.5,386.5 408.5,303.5 456.5,494.5 514.5,408.5 558.5,540.5 "/>
+<line class="st3" x1="356.5" y1="255.5" x2="445.5" y2="227.5"/>
+<rect x="170.5" y="487.5" transform="matrix(0.7496 -0.6618 0.6618 0.7496 -307.6022 274.8423)" class="st4" width="78" height="113"/>
+<rect x="269.6" y="543.7" transform="matrix(0.7496 -0.6618 0.6618 0.7496 -319.9622 354.5355)" class="st4" width="78" height="113"/>
+<rect x="346.6" y="560.7" transform="matrix(0.7496 -0.6618 0.6618 0.7496 -311.9331 409.7471)" class="st4" width="78" height="113"/>
+<rect x="428.6" y="546.7" transform="matrix(0.7496 -0.6618 0.6618 0.7496 -282.1401 460.5175)" class="st4" width="78" height="113"/>
+<rect x="471.6" y="527.7" transform="matrix(0.9354 -0.3535 0.3535 0.9354 -173.5415 218.2086)" class="st4" width="78" height="113"/>
+<rect x="314.7" y="214.7" transform="matrix(0.866 -0.5 0.5 0.866 -65.1085 216.3498)" class="st4" width="113" height="29.9"/>
+</svg>

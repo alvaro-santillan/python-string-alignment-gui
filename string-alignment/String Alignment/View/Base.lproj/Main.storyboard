@@ -61,7 +61,7 @@
                                                         </accessibility>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="154" id="Bdl-yh-LDp"/>
-                                                            <constraint firstAttribute="height" constant="34" id="vgt-f3-zlL"/>
+                                                            <constraint firstAttribute="height" id="vgt-f3-zlL"/>
                                                         </constraints>
                                                         <color key="textColor" name="Right Title Text"/>
                                                         <fontDescription key="fontDescription" name="Dogica_Pixel" family="Dogica Pixel" pointSize="11"/>
@@ -131,18 +131,25 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Personal Logo" translatesAutoresizingMaskIntoConstraints="NO" id="azK-um-vmR">
+                                        <rect key="frame" x="0.0" y="114" width="368" height="212"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="Right View Background"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="azK-um-vmR" secondAttribute="trailing" id="6Qn-uN-40i"/>
                                     <constraint firstItem="oMK-L8-RaK" firstAttribute="leading" secondItem="OZL-bp-kcR" secondAttribute="trailing" multiplier="20/368" id="6qC-ft-lUg"/>
                                     <constraint firstItem="xML-Cb-vHu" firstAttribute="leading" secondItem="OZL-bp-kcR" secondAttribute="trailing" multiplier="20/368" id="81Q-FY-Y6K"/>
                                     <constraint firstItem="JiO-p9-PEj" firstAttribute="width" secondItem="OZL-bp-kcR" secondAttribute="width" multiplier="20/368" id="Cye-cs-9CS"/>
                                     <constraint firstItem="EYG-IF-HxQ" firstAttribute="height" secondItem="OZL-bp-kcR" secondAttribute="height" multiplier="34/414" id="IZN-si-qBF"/>
+                                    <constraint firstItem="azK-um-vmR" firstAttribute="top" secondItem="oMK-L8-RaK" secondAttribute="bottom" id="PKt-gt-de9"/>
                                     <constraint firstItem="a8N-5G-4W5" firstAttribute="width" secondItem="OZL-bp-kcR" secondAttribute="width" multiplier="20/368" id="QKn-rf-gfS"/>
+                                    <constraint firstItem="azK-um-vmR" firstAttribute="leading" secondItem="OZL-bp-kcR" secondAttribute="leading" id="d3T-Kw-atN"/>
                                     <constraint firstAttribute="bottom" secondItem="xML-Cb-vHu" secondAttribute="bottom" multiplier="414/394" id="fEJ-w8-Zbm"/>
                                     <constraint firstAttribute="trailing" secondItem="oMK-L8-RaK" secondAttribute="trailing" multiplier="368/348" id="jMB-yi-M7v"/>
                                     <constraint firstItem="uy8-mX-5pd" firstAttribute="height" secondItem="OZL-bp-kcR" secondAttribute="height" multiplier="20/414" id="jMj-IN-AYL"/>
                                     <constraint firstItem="oMK-L8-RaK" firstAttribute="top" secondItem="OZL-bp-kcR" secondAttribute="bottom" multiplier="20/414" id="n4k-qZ-n0f"/>
+                                    <constraint firstItem="xML-Cb-vHu" firstAttribute="top" secondItem="azK-um-vmR" secondAttribute="bottom" constant="8" id="omm-zx-Wfm"/>
                                     <constraint firstItem="OaO-jX-FWi" firstAttribute="height" secondItem="OZL-bp-kcR" secondAttribute="height" multiplier="40/414" id="pRo-9Q-U6L"/>
                                     <constraint firstAttribute="trailing" secondItem="xML-Cb-vHu" secondAttribute="trailing" multiplier="368/348" id="vTx-uD-sGF"/>
                                 </constraints>
@@ -1003,6 +1010,7 @@
         <image name="Home_Icon_Set" width="432" height="384"/>
         <image name="Linked-In_Icon_Set" width="336" height="384"/>
         <image name="Pause_Icon_Set" width="336" height="384"/>
+        <image name="Personal Logo" width="800" height="800"/>
         <image name="Play_Icon_Set" width="336" height="384"/>
         <image name="Settings_Icon_Set" width="384" height="384"/>
         <image name="Volume_On_Icon_Set" width="288" height="384"/>
