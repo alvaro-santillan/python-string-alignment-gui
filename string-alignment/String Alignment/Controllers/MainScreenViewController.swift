@@ -48,7 +48,7 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         determinCorrectWordSize()
         checkIfFirstRun()
         loadUserData()
-        PlaySound()
+//        PlaySound()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -140,17 +140,20 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         let soundArray = ["A1", "A1 Sharp", "B1", "C1", "C1 Sharp", "D1", "D1 Sharp", "E1", "F1", "F1 Sharp", "G1", "G1 Sharp"]
         let path = Bundle.main.path(forResource: soundArray.randomElement(), ofType:"wav")!
         let url = URL(fileURLWithPath: path)
+        let soundOnSetting = UserDefaults.standard.bool(forKey: "Volume On Setting")
         
-        do {
-            // Open cd player put in disk
-            let sound = try AVAudioPlayer(contentsOf: url)
-            self.soundPlayer = sound
-//            sound.numberOfLoops = -1
-            sound.prepareToPlay()
-            sound.play()
-        } catch {
-            print("error loading file")
-            // couldn't load file :(
+        if soundOnSetting {
+            do {
+                // Open cd player put in disk
+                let sound = try AVAudioPlayer(contentsOf: url)
+                self.soundPlayer = sound
+    //            sound.numberOfLoops = -1
+                sound.prepareToPlay()
+                sound.play()
+            } catch {
+                print("error loading file")
+                // couldn't load file :(
+            }
         }
     }
     
