@@ -167,20 +167,20 @@ class GameManager {
     
     var gameIsOver = Bool()
     
-    func playSound(selectedSoundFileName: String) {
-        try? AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.ambient)
-        try? AVAudioSession.sharedInstance().setActive(true)
-        let musicPath = Bundle.main.path(forResource: selectedSoundFileName, ofType:"wav")!
-        let url = URL(fileURLWithPath: musicPath)
-        
-        if UserDefaults.standard.bool(forKey: "Volume On Setting") {
-            do {
-                let sound = try AVAudioPlayer(contentsOf: url)
-                self.audioPlayer = sound
-                sound.play()
-            } catch {
-                print("Error playing file")
-            }
-        }
-    }
+//    func playSound(selectedSoundFileName: String) {
+//        try? AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.ambient)
+//        try? AVAudioSession.sharedInstance().setActive(true)
+//        let musicPath = Bundle.main.path(forResource: selectedSoundFileName, ofType:"wav")!
+//        let url = URL(fileURLWithPath: musicPath)
+//        
+//        if UserDefaults.standard.bool(forKey: "Volume On Setting") {
+//            do {
+//                let sound = try AVAudioPlayer(contentsOf: url)
+//                self.audioPlayer = sound
+//                sound.play()
+//            } catch {
+//                print("Error playing file")
+//            }
+//        }
+//    }
 }

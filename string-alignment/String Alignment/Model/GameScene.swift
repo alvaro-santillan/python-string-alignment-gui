@@ -498,7 +498,7 @@ class GameScene: SKScene {
                     
                     // Create sound action and run it.
                     if soundOnSetting {
-                        let soundAction = SKAction.playSoundFileNamed("c_Cb.wav", waitForCompletion: false)
+                        var soundAction = SKAction.playSoundFileNamed("A1 Silent.wav", waitForCompletion: false)
                         self.gameBackground.run(soundAction)
                     }
                 } else if squareLocationColorAndValue.operationType == "Delete" {
@@ -506,7 +506,7 @@ class GameScene: SKScene {
                     
                     // Create sound action and run it.
                     if soundOnSetting {
-                        let soundAction = SKAction.playSoundFileNamed("eb_Db.wav", waitForCompletion: false)
+                        let soundAction = SKAction.playSoundFileNamed("B1 Silent.wav", waitForCompletion: false)
                         self.gameBackground.run(soundAction)
                     }
                 } else if squareLocationColorAndValue.operationType == "Insert" {
@@ -514,7 +514,7 @@ class GameScene: SKScene {
                     
                     // Create sound action and run it.
                     if soundOnSetting {
-                        let soundAction = SKAction.playSoundFileNamed("f_Fb.wav", waitForCompletion: false)
+                        let soundAction = SKAction.playSoundFileNamed("C1 Silent.wav", waitForCompletion: false)
                         self.gameBackground.run(soundAction)
                     }
                 } else if squareLocationColorAndValue.operationType == "Substitute" {
@@ -522,7 +522,7 @@ class GameScene: SKScene {
                     
                     // Create sound action and run it.
                     if soundOnSetting {
-                        let soundAction = SKAction.playSoundFileNamed("g_Gb.wav", waitForCompletion: false)
+                        let soundAction = SKAction.playSoundFileNamed("D1 Silent.wav", waitForCompletion: false)
                         self.gameBackground.run(soundAction)
                     }
                 }
@@ -558,7 +558,7 @@ class GameScene: SKScene {
             squareLocationAndColor.square.strokeColor = self.finalPathColor
             
             if soundOnSetting {
-                let soundAction = SKAction.playSoundFileNamed("b_B.wav", waitForCompletion: false)
+                let soundAction = SKAction.playSoundFileNamed("E1 Silent.wav", waitForCompletion: false)
                 self.gameBackground.run(soundAction)
             }
             
@@ -591,7 +591,7 @@ class GameScene: SKScene {
                 
                 // Create sound action and run it.
                 if self.soundOnSetting {
-                    let soundAction = SKAction.playSoundFileNamed("bb_Ab.wav", waitForCompletion: false)
+                    let soundAction = SKAction.playSoundFileNamed("F1 Silent.wav", waitForCompletion: false)
                     self.gameBackground.run(soundAction)
                 }
             }
