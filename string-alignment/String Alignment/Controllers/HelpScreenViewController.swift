@@ -95,10 +95,10 @@ class HelpScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @IBAction func linkedInButtonTapped(_ sender: UIButton) {
         playSound()
-        var webURL = "https://www.linkedin.com/in/álvarosantillan"
+        var webURL = "https://www.linkedin.com/in/alvaro-santillan"
         webURL = webURL.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!
 
-        var appURL = "linkedin://in/álvarosantillan"
+        var appURL = "linkedin://in/alvaro-santillan"
         appURL = appURL.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!
         
         urlSelector(webURL: webURL, appURL: appURL)
@@ -111,7 +111,7 @@ class HelpScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @IBAction func githubButtonTapped(_ sender: UIButton) {
         playSound()
-        var webURL = "https://github.com/AFSM1995"
+        var webURL = "https://github.com/alvaro-santillan"
         webURL = webURL.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!
         UIApplication.shared.open(URL(string: webURL)! as URL, options: [:], completionHandler: nil)
     }
@@ -122,7 +122,7 @@ class HelpScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @IBAction func rateButtonTapped(_ sender: UIButton) {
         playSound()
-        var webURL = "https://www.linkedin.com/in/álvarosantillan"
+        var webURL = "https://www.linkedin.com/in/alvaro-santillan"
         webURL = webURL.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!
 
         let appID = "1555165858"
