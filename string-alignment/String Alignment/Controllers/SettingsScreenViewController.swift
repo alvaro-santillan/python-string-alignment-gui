@@ -186,6 +186,7 @@ class SettingsSceenViewController: UIViewController, UITableViewDelegate, UITabl
     @IBAction func soundButtonTapped(_ sender: UIButton) {
         playSound()
         boolButtonResponder(sender, isIconButton: true, key: "Volume On Setting", trueOption: "Volume_On_Icon_Set", falseOption: "Volume_Mute_Icon_Set")
+        PlaySound()
     }
     
     @IBAction func vibrateButtonTapped(_ sender: UIButton) {

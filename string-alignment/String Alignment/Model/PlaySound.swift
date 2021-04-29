@@ -16,14 +16,25 @@ func PlaySound() {
 //    let soundArra = ["Background_Music"]
     let path = Bundle.main.path(forResource: "Photon in A-star", ofType:"wav")!
     let url = URL(fileURLWithPath: path)
+    let soundOnSetting = UserDefaults.standard.bool(forKey: "Volume On Setting")
+    
     
     do {
         // Open cd player put in disk
         let sound = try AVAudioPlayer(contentsOf: url)
-        songPlayer = sound
-        sound.numberOfLoops = -1
-        sound.prepareToPlay()
-        sound.play()
+        
+        if soundOnSetting {
+            songPlayer = sound
+            sound.numberOfLoops = -1
+            sound.prepareToPlay()
+            sound.play()
+        } else {
+            if songPlayer != nil {
+                if ((songPlayer?.isPlaying) != nil) {
+                    songPlayer?.stop()
+                }
+            }
+        }
     } catch {
         print("error loading file")
         // couldn't load file :(
