@@ -7,6 +7,7 @@
 //
 
 import SpriteKit
+import AVFoundation
 
 class GameScreenViewController: UIViewController {
     @IBOutlet weak var scoreButton: UIButton!
@@ -14,6 +15,7 @@ class GameScreenViewController: UIViewController {
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var settingsButton: UIButton!
     
+    var soundPlayer: AVAudioPlayer?
     weak var mainScreenViewController: MainScreenViewController!
     weak var gameScreenViewController: GameScreenViewController!
     
@@ -81,11 +83,31 @@ class GameScreenViewController: UIViewController {
         }
     }
     
+    func playSound() {
+        let soundArray = ["A1", "A1 Sharp", "B1", "C1", "C1 Sharp", "D1", "D1 Sharp", "E1", "F1", "F1 Sharp", "G1", "G1 Sharp"]
+        let path = Bundle.main.path(forResource: soundArray.randomElement(), ofType:"wav")!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            // Open cd player put in disk
+            let sound = try AVAudioPlayer(contentsOf: url)
+            self.soundPlayer = sound
+            //sound.numberOfLoops = 0
+            sound.prepareToPlay()
+            sound.play()
+        } catch {
+            print("error loading file")
+            // couldn't load file :(
+        }
+    }
+    
     @IBAction func settingsButtonTapped(_ sender: Any) {
+        playSound()
         defaults.set(true, forKey: "In Settings From Game")
     }
     
     @IBAction func homeButtonTapped(_ sender: UIButton) {
+        playSound()
 //        let appDelegate = UIApplication.shared.delegate as! AppDelegate
 //        if let vc = appDelegate.window?.rootViewController {
 //            self.gameScreenViewController = (vc.presentedViewController as? GameScreenViewController)
@@ -94,16 +116,17 @@ class GameScreenViewController: UIViewController {
 //                i.square.removeAllActions()
 //            }
 //        }
-        
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func stepButtonTapped(_ sender: UIButton) {
+        playSound()
         // If the game is paused, then the correct icon to display is play.
         boolButtonResponder(sender, isIconButton: true, key: "Game Is Paused Setting", trueOption: "Play_Icon_Set", falseOption: "Pause_Icon_Set")
     }
     
     @IBAction func scoreButtonTapped(_ sender: UIButton) {
+        playSound()
         // Fixes Bug Score button color dose not respect legend changes.
         legendData = UserDefaults.standard.array(forKey: "Legend Preferences") as! [[Any]]
         // If button tapped switch to next option.

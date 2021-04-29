@@ -8,6 +8,7 @@
 
 import UIKit
 import SpriteKit
+import AVFoundation
 
 class MainScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var segControl: UISegmentedControl!
@@ -16,6 +17,7 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var lastWordOneLabel: UITextField!
     @IBOutlet weak var lastWordTwoLabel: UITextField!
     
+    var soundPlayer: AVAudioPlayer?
     var wordOneList = [String]()
     var wordTwoList = [String]()
     var listData = WordDataLoader() // New
@@ -46,6 +48,7 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         determinCorrectWordSize()
         checkIfFirstRun()
         loadUserData()
+//        PlaySound()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -133,14 +136,38 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.selectRow(at: [0, choice], animated: true, scrollPosition: UITableView.ScrollPosition.none)
     }
     
+    func playSound() {
+        let soundArray = ["A1", "A1 Sharp", "B1", "C1", "C1 Sharp", "D1", "D1 Sharp", "E1", "F1", "F1 Sharp", "G1", "G1 Sharp"]
+        let path = Bundle.main.path(forResource: soundArray.randomElement(), ofType:"wav")!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            // Open cd player put in disk
+            let sound = try AVAudioPlayer(contentsOf: url)
+            self.soundPlayer = sound
+//            sound.numberOfLoops = -1
+            sound.prepareToPlay()
+            sound.play()
+        } catch {
+            print("error loading file")
+            // couldn't load file :(
+        }
+    }
+    
     @IBAction func playButtonTapped(_ sender: UIButton) {
+        playSound()
+//        play(on: false)
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GameScreen") as UIViewController
         self.present(viewController, animated: true, completion: nil)
-        
+
         let pathFindingAlgorithimName = UserDefaults.standard.string(forKey: "Selected Path Finding Algorithim Name")
         let mazeGenerationAlgorithimName = UserDefaults.standard.string(forKey: "Selected Maze Algorithim Name")
         UserDefaults.standard.set(pathFindingAlgorithimName, forKey: "lastWordTwo")
         UserDefaults.standard.set(mazeGenerationAlgorithimName, forKey: "lastWordOne")
+    }
+    
+    @IBAction func settingButtonTapped(_ sender: Any) {
+        playSound()
     }
     
     @IBAction func segmentedControllerTapped(_ sender: UISegmentedControl) {

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SettingsSceenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // Views
@@ -28,6 +29,9 @@ class SettingsSceenViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var vibrationButton: UIButton!
     @IBOutlet weak var darkOrLightModeButton: UIButton!
+    
+    var soundPlayer: AVAudioPlayer?
+    var AudioPlayer = AVAudioPlayer()
     
     weak var gameScreenViewController: GameScreenViewController!
     
@@ -95,7 +99,26 @@ class SettingsSceenViewController: UIViewController, UITableViewDelegate, UITabl
         return cell
     }
     
+    func playSound() {
+        let soundArray = ["A1", "A1 Sharp", "B1", "C1", "C1 Sharp", "D1", "D1 Sharp", "E1", "F1", "F1 Sharp", "G1", "G1 Sharp"]
+        let path = Bundle.main.path(forResource: soundArray.randomElement(), ofType:"wav")!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            // Open cd player put in disk
+            let sound = try AVAudioPlayer(contentsOf: url)
+            self.soundPlayer = sound
+            //sound.numberOfLoops = 0
+            sound.prepareToPlay()
+            sound.play()
+        } catch {
+            print("error loading file")
+            // couldn't load file :(
+        }
+    }
+    
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        playSound()
         let tappedSquare = tapGestureRecognizer.view as! UIImageView
         let cellText = legendData[tappedSquare.tag][0] as! String
         let colorPalette = colorPaletteManager(cellText: cellText)
@@ -111,53 +134,64 @@ class SettingsSceenViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     @IBAction func speedButtonTapped(_ sender: UIButton) {
+        playSound()
         let options = ["Speed: Slow", "Speed: Normal", "Speed: Fast", "Speed: Extreme"]
         fourOptionButtonResponder(sender, isSpeedButton: true, key: "Snake Speed Text Setting", optionArray: options)
     }
     
     @IBAction func substituteCostButtonTapped(_ sender: UIButton) {
+        playSound()
         let options = ["Substitute Cost: 1", "Substitute Cost: 2", "Substitute Cost: 3", "Substitute Cost: 4"]
         fourOptionButtonResponder(sender, isSpeedButton: false, key: "Substitute Cost Setting", optionArray: options)
     }
     
     @IBAction func deleteCostButtonTapped(_ sender: UIButton) {
+        playSound()
         let options = ["Delete Cost: 1", "Delete Cost: 2", "Delete Cost: 3", "Delete Cost: 4"]
         fourOptionButtonResponder(sender, isSpeedButton: false, key: "Delete Cost Setting", optionArray: options)
     }
     
     @IBAction func animationsButtonTapped(_ sender: UIButton) {
         // To-do
+        playSound()
     }
     
     @IBAction func insertCostButtonTapped(_ sender: UIButton) {
+        playSound()
         let options = ["Insert Cost: 1", "Insert Cost: 2", "Insert Cost: 3", "Insert Cost: 4"]
         fourOptionButtonResponder(sender, isSpeedButton: false, key: "Insert Cost Setting", optionArray: options)
     }
     
     @IBAction func noOperationCostButtonTapped(_ sender: UIButton) {
+        playSound()
         let options = ["No Operation Cost: 1", "No Operation Cost: 2", "No Operation Cost: 3", "No Operation Cost: 4"]
         fourOptionButtonResponder(sender, isSpeedButton: false, key: "No Operation Cost Setting", optionArray: options)
     }
     
     @IBAction func minimumWordRepeatButtonTapped(_ sender: UIButton) {
+        playSound()
         let options = [1,2,3,4,5,6,7,8,9,10]
         tenOptionButtonResponder(sender, isSpeedButton: false, key: "Minimum Word Repeat Setting", optionArray: options)
     }
     
     @IBAction func returnButtonTapped(_ sender: UIButton) {
+        playSound()
         defaults.set(true, forKey: "Settings Dismissed")
         self.dismiss(animated: true)
     }
     
     @IBAction func soundButtonTapped(_ sender: UIButton) {
+        playSound()
         boolButtonResponder(sender, isIconButton: true, key: "Volume On Setting", trueOption: "Volume_On_Icon_Set", falseOption: "Volume_Mute_Icon_Set")
     }
     
     @IBAction func vibrateButtonTapped(_ sender: UIButton) {
+        playSound()
         boolButtonResponder(sender, isIconButton: true, key: "Vibrate On Setting", trueOption: "Vibrate_On_Icon_Set", falseOption: "Vibrate_Off_Icon_Set")
     }
     
     @IBAction func darkModeButtonTapped(_ sender: UIButton) {
+        playSound()
         boolButtonResponder(sender, isIconButton: true, key: "Dark Mode On Setting", trueOption: "Dark_Mode_Icon_Set", falseOption: "Light_Mode_Icon_Set")
         
         if (defaults.bool(forKey: "Dark Mode On Setting")) == true {
@@ -177,6 +211,7 @@ class SettingsSceenViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     @IBAction func homeButtonTapped(_ sender: UIButton) {
+        playSound()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         if let vc = appDelegate.window?.rootViewController {
             self.gameScreenViewController = (vc.presentedViewController as? GameScreenViewController)
@@ -187,5 +222,9 @@ class SettingsSceenViewController: UIViewController, UITableViewDelegate, UITabl
                 }
             }
         }
+    }
+    
+    @IBAction func helpButtonTapped(_ sender: Any) {
+        playSound()
     }
 }

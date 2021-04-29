@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class HelpScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableVIew: UITableView!
     
+    var soundPlayer: AVAudioPlayer?
     var realRowCount = 3
     var realColumnCount = 3
     var wordOneList = [String]()
@@ -67,12 +69,32 @@ class HelpScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         UIApplication.shared.canOpenURL(URL(string: appURL)! as URL) ? (selectedURL = appURL) : (selectedURL = webURL)
         UIApplication.shared.open(URL(string: selectedURL)! as URL, options: [:], completionHandler: nil)
     }
+    
+    func playSound() {
+        let soundArray = ["A1", "A1 Sharp", "B1", "C1", "C1 Sharp", "D1", "D1 Sharp", "E1", "F1", "F1 Sharp", "G1", "G1 Sharp"]
+        let path = Bundle.main.path(forResource: soundArray.randomElement(), ofType:"wav")!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            // Open cd player put in disk
+            let sound = try AVAudioPlayer(contentsOf: url)
+            self.soundPlayer = sound
+//            sound.numberOfLoops = -1
+            sound.prepareToPlay()
+            sound.play()
+        } catch {
+            print("error loading file")
+            // couldn't load file :(
+        }
+    }
 
     @IBAction func ReturnToSettingsButtonTapped(_ sender: UIButton) {
+        playSound()
         self.dismiss(animated: true)
     }
     
     @IBAction func linkedInButtonTapped(_ sender: UIButton) {
+        playSound()
         var webURL = "https://www.linkedin.com/in/álvarosantillan"
         webURL = webURL.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!
 
@@ -83,16 +105,23 @@ class HelpScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     @IBAction func personalWebisteButtonTapped(_ sender: UIButton) {
+        playSound()
         UIApplication.shared.open(URL(string: "http://alvarosantillan.com/")! as URL, options: [:], completionHandler: nil)
     }
     
     @IBAction func githubButtonTapped(_ sender: UIButton) {
+        playSound()
         var webURL = "https://github.com/AFSM1995"
         webURL = webURL.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!
         UIApplication.shared.open(URL(string: webURL)! as URL, options: [:], completionHandler: nil)
     }
     
+    @IBAction func homeButtonTapped(_ sender: Any) {
+        playSound()
+    }
+    
     @IBAction func rateButtonTapped(_ sender: UIButton) {
+        playSound()
         var webURL = "https://www.linkedin.com/in/álvarosantillan"
         webURL = webURL.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!
 
