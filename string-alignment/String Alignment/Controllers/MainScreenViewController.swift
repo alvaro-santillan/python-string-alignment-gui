@@ -48,7 +48,7 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         determinCorrectWordSize()
         checkIfFirstRun()
         loadUserData()
-//        PlaySound()
+        PlaySound()
     }
     
     override func viewDidAppear(_ animated: Bool) {
